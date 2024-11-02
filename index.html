@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Twiter</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/output.css">
+        <link rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add" />
+</head>
+
+<body class=" bg-black text-white">
+        <div class="flex container mx-auto">
+                <div class="first  w-10  md:w-[70%] ">
+                        <div class="sidebar flex  sticky top-0 md:items-end flex-col">
+                                <div class="logo invert my-4 self-start mx-16"><img class="w-14 m-auto "
+                                                src="img/Twitter-Logо.svg" alt="">
+                                </div>
+
+                                <ul class="flex flex-col text-2xl space-y-4 md:px-11 font-bold w-full">
+
+                                        <li
+                                                class="items-center flex gap-3 justify-center  md:w-full md:justify-start   hover:bg-gray-900 hover:rounded-full cursor-pointer md:px-5 py-3">
+                                                <img class="text-3xl "
+                                                        src="img/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                        alt=""> <span class="hidden md:block ">
+                                                        Home
+                                                </span>
+                                        </li>
+
+                                        <li
+                                                class=" items-center flex gap-3 justify-center  md:w-fit  md:justify-start hover:bg-gray-900 hover:rounded-full cursor-pointer md:px-5 py-3">
+                                                <img class="text-3xl"
+                                                        src="img/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                        alt=""> <span class="hidden md:block ">
+                                                        Explore
+                                                </span>
+                                        </li>
+
+                                        <li
+                                                class=" items-center flex gap-3 justify-center   md:w-fit  md:justify-start hover:bg-gray-900 hover:rounded-full cursor-pointer md:px-5 py-3">
+                                                <img class="text-3xl"
+                                                        src="img/notifications_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                        alt=""><span class="hidden md:block ">
+                                                        Notification
+                                                </span>
+                                        </li>
+
+                                        <li
+                                                class=" items-center flex gap-3 justify-center   md:w-fit  md:justify-start hover:bg-gray-900 hover:rounded-full cursor-pointer md:px-5 py-3">
+                                                <img class="text-3xl"
+                                                        src="img/chat_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                        alt=""> <span class="hidden md:block ">
+                                                        Grok
+                                                </span>
+                                        </li>
+
+                                        <li
+                                                class=" items-center flex gap-3 justify-center   md:w-fit  md:justify-start  hover:bg-gray-900 hover:rounded-full cursor-pointer md:px-5 py-3">
+                                                <img class="text-3xl"
+                                                        src="img/list_alt_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                        alt=""> <span class="hidden md:block ">
+                                                        Lists
+                                                </span>
+                                        </li>
+
+                                        <li
+                                                class=" items-center flex gap-3 justify-center   md:w-fit  md:justify-start hover:bg-gray-900 hover:rounded-full cursor-pointer md:px-5 py-3">
+                                                <img class="text-3xl"
+                                                        src="img/bookmark_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                        alt=""> <span class="hidden md:block ">
+                                                        Bookmark
+                                                </span>
+                                        </li>
+
+                                        <li
+                                                class=" items-center flex gap-3 justify-center   md:w-fit   md:justify-start hover:bg-gray-900 hover:rounded-full cursor-pointer md:px-5 py-3">
+                                                <img class="text-3xl"
+                                                        src="img/group_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                        alt=""> <span class="hidden md:block ">
+                                                        Communities
+                                                </span>
+                                        </li>
+
+                                        <li
+                                                class=" items-center flex gap-3 justify-center   md:w-fit   md:justify-start  hover:bg-gray-900 hover:rounded-full cursor-pointer md:px-5 py-3">
+                                                <img src="img/check_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                        alt=""> <span class="hidden md:block ">
+                                                        Premium
+                                                </span>
+                                        </li>
+
+                                        <li
+                                                class=" items-center flex gap-3 justify-center   md:w-fit  md:justify-start hover:bg-gray-900 hover:rounded-full cursor-pointer md:px-5 py-3">
+                                                <img class="text-3xl"
+                                                        src="img/person_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                        alt=""> <span class="hidden md:block ">
+                                                        Profile
+                                                </span>
+                                        </li>
+
+                                        <li
+                                                class=" items-center flex gap-3 justify-center   md:w-fit  md:justify-start hover:bg-gray-900 hover:rounded-full cursor-pointer md:px-5 py-3">
+                                                <img class="text-3xl"
+                                                        src="img/expand_circle_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                        alt=""> <span class="hidden md:block ">
+                                                        More
+                                                </span>
+                                        </li>
+                                        <li>
+                                                <div class="btn w-full text-center my-4">
+                                                        <button
+                                                                class="bg-blue-600 text-white md:block px-20 py-3 text-2xl rounded-full hidden">
+                                                                Post
+                                                        </button>
+                                                        <button
+                                                                class="bg-blue-600 text-white   text-xl rounded-full md:hidden">
+                                                                <img src="img/notifications_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                        alt="">
+                                                        </button>
+
+                                                </div>
+                                        </li>
+                                </ul>
+                        </div>
+                </div>
+
+
+
+
+                <div class="second  w-full border-[1px] border-x-gray-600 border-y-black  ">
+                        <div class="top flex p-2 relative">
+                                <div class="absolute w-16 h-1 bottom-0 left-[19%] bg-blue-600"></div>
+                                <div class="left w-1/2  font-bold text-lg  flex justify-center"> For You</div>
+                                <div class="right w-1/2  font-bold text-lg flex justify-center">Following</div>
+                                <div class="setting mx-2"><img
+                                                src="img/settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                </div>
+                        </div>
+
+                        <div class="h-[1px] w-full bg-gray-600"></div>
+
+                        <div class="wahtshap flex gap-5">
+                                <div class="img w-16 ">
+                                        <img class="rounded-full"
+                                                src="https://pbs.twimg.com/profile_images/1686947645326303232/wHwFL0zg_bigger.jpg"
+                                                alt="">
+                                </div>
+                                <div class="gap-3 w-[80%]">
+                                        <input class="w-full bg-black text-xl text-white mx-5 outline-none" type="text"
+                                                placeholder="What is Happening?!">
+                                        <div class="globe gap-3 text-blue-500 flex items-center mx-5 my-4 w-full"> <img
+                                                        src="img/globe_asia_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                                                        alt="">
+                                                <span class="font-bold"> Everyone can reply</span>
+                                        </div>
+                                        <div class="h-[0.2px] w-full bg-gray-400 my-3"></div>
+                                        <div class="ic flex gap-2">
+                                                <img class="cursor-pointer"
+                                                        src="img/image_24dp_0000F5_FILL1_wght400_GRAD0_opsz24.svg"
+                                                        alt="">
+                                                <img class="cursor-pointer"
+                                                        src="img/gif_24dp_0000F5_FILL1_wght400_GRAD0_opsz24.svg" alt="">
+                                                <img class="cursor-pointer"
+                                                        src="img/ballot_24dp_0000F5_FILL1_wght400_GRAD0_opsz24.svg"
+                                                        alt="">
+                                                <img class="cursor-pointer"
+                                                        src="img/sentiment_satisfied_24dp_0000F5_FILL1_wght400_GRAD0_opsz24.svg"
+                                                        alt="">
+                                                <img class="cursor-pointer"
+                                                        src="img/calendar_month_24dp_0000F5_FILL1_wght400_GRAD0_opsz24.svg"
+                                                        alt="">
+                                                <img class="cursor-pointer"
+                                                        src="img/pin_drop_24dp_0000F5_FILL1_wght400_GRAD0_opsz24.svg"
+                                                        alt="">
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-600"></div>
+
+                        <div class="posts">
+                                <div class="post">
+                                        <div class="flex">
+                                                <div class="m-3"><img class="w-20 rounded-full"
+                                                                src="https://pbs.twimg.com/profile_images/1686947645326303232/wHwFL0zg_bigger.jpg"
+                                                                alt="">
+                                                </div>
+                                                <div class="content my-3">
+                                                        <span class="hover:underline cursor-pointer">
+                                                                Aditya Jain
+                                                        </span><span class="text-gray-500">@Adityaj5213 · 13h</span>
+                                                        <div>Robonauts India </div>
+                                                        <p> This is the Certificate of robotics and IOT</p>
+                                                        <div class="postimg m-4 ml-0 "><img class="rounded-xl"
+                                                                        src="img/post/robo.jpg" alt="">
+                                                        </div>
+                                                        <div class="ico flex mx-3 justify-between text-gray-600">
+                                                                <div class="con ">
+                                                                        <span
+                                                                                class="flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full "><img
+                                                                                        src="img/chat_bubble_24dp_D9D9D9_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                                        alt="">1k</span>
+                                                                </div>
+                                                                <div class="con">
+                                                                        <span
+                                                                                class="flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><img
+                                                                                        src="img/repeat_24dp_D9D9D9_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                                        alt="">1k</span>
+                                                                </div>
+                                                                <div class="con ">
+                                                                        <span
+                                                                                class="flex items-center justify-center hover:text-red-500 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><img
+                                                                                        src="img/favorite_24dp_D9D9D9_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                                        alt="">1k</span>
+                                                                </div>
+                                                                <div class="con ">
+                                                                        <span
+                                                                                class="flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><img
+                                                                                        src="img/bar_chart_24dp_D9D9D9_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                                        alt="">1k</span>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-600"></div>
+
+                        <div class="posts">
+                                <div class="post">
+                                        <div class="flex">
+                                                <div class="m-3"><img class="w-20 rounded-full"
+                                                                src="https://pbs.twimg.com/profile_images/1686947645326303232/wHwFL0zg_bigger.jpg"
+                                                                alt="">
+                                                </div>
+                                                <div class="content my-3">
+                                                        <span class="hover:underline cursor-pointer">
+                                                                Aditya Jain
+                                                        </span><span class="text-gray-500">@Adityaj5213 · 13h</span>
+                                                        <div>Generative AI</div>
+                                                        <p>This is the certificate by AICTE of GENERATIVE AI </p>
+                                                        <div class="postimg m-4 ml-0 "><img class="rounded-xl"
+                                                                        src="img/post/grn.jpg" alt="">
+                                                        </div>
+                                                        <div class="ico flex mx-3 justify-between text-gray-600">
+                                                                <div class="con ">
+                                                                        <span
+                                                                                class="flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><img
+                                                                                        src="img/chat_bubble_24dp_D9D9D9_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                                        alt="">1k</span>
+                                                                </div>
+                                                                <div class="con">
+                                                                        <span
+                                                                                class="flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><img
+                                                                                        src="img/repeat_24dp_D9D9D9_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                                        alt="">1k</span>
+                                                                </div>
+                                                                <div class="con ">
+                                                                        <span
+                                                                                class="flex items-center justify-center hover:text-red-500 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><img
+                                                                                        src="img/favorite_24dp_D9D9D9_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                                        alt="">1k</span>
+                                                                </div>
+                                                                <div class="con ">
+                                                                        <span
+                                                                                class="flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><img
+                                                                                        src="img/bar_chart_24dp_D9D9D9_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                                        alt="">1k</span>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-600"></div>
+
+                        <div class="posts">
+                                <div class="post">
+                                        <div class="flex">
+                                                <div class="m-4"><img class="w-max rounded-full"
+                                                                src="https://pbs.twimg.com/profile_images/1686947645326303232/wHwFL0zg_bigger.jpg"
+                                                                alt="">
+                                                </div>
+                                                <div class="content my-3">
+                                                        <span class="hover:underline cursor-pointer">
+                                                                Aditya Jain
+                                                        </span><span class="text-gray-500">@Adityaj5213 · 13h</span>
+                                                        <div>How to become a MILLIONAIRE</div>
+                                                        <div class="postimg m-4 ml-0 ">
+                                                                <p>Becoming a millionaire requires a combination of
+                                                                        disciplined saving, smart investing, and a
+                                                                        long-term mindset. Start by developing a clear
+                                                                        financial plan that includes setting specific
+                                                                        goals, tracking expenses, and budgeting
+                                                                        effectively. Focus on increasing your income
+                                                                        through career advancement, side hustles, or
+                                                                        entrepreneurship, while keeping your spending in
+                                                                        check. Invest wisely in assets like stocks</p>
+                                                        </div>
+                                                        <div class="ico flex mx-3 justify-between text-gray-600">
+                                                                <div class="con ">
+                                                                        <span
+                                                                                class="flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><img
+                                                                                        src="img/chat_bubble_24dp_D9D9D9_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                                        alt="">1k</span>
+                                                                </div>
+                                                                <div class="con">
+                                                                        <span
+                                                                                class="flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><img
+                                                                                        src="img/repeat_24dp_D9D9D9_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                                        alt="">1k</span>
+                                                                </div>
+                                                                <div class="con ">
+                                                                        <span
+                                                                                class="flex items-center justify-center hover:text-red-500 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><img
+                                                                                        src="img/favorite_24dp_D9D9D9_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                                        alt="">1k</span>
+                                                                </div>
+                                                                <div class="con ">
+                                                                        <span
+                                                                                class="flex items-center justify-center hover:text-blue-500 hover:bg-gray-900 hover:cursor-pointer hover:rounded-full"><img
+                                                                                        src="img/bar_chart_24dp_D9D9D9_FILL0_wght400_GRAD0_opsz24.svg"
+                                                                                        alt="">1k</span>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-600"></div>
+
+
+                </div>
+
+
+
+
+
+                <div class="third w-full">
+                        <div class=" sticky top-0 search m-3">
+                                <input type="text" class="w-1/2 rounded-full  bg-gray-900 text-white px-2 py-2 "
+                                        placeholder="Search">
+                        </div>
+
+                        <div class="what w-1/2 p-5  rounded-xl bg-slate-950 m-3 space-y-4 top-0 sticky">
+                                <h1 class=" text-xl font-bold px-3 sticky "> What's Happening </h1>
+                                <div class="item  p-3 px-4 hover:bg-gray-800 cursor-pointer">
+                                        <div class=" text-sm text-gray-200">Treanding in India </div>
+                                        <div class="font-bold"> #Aditya Jain</div>
+                                        <div class="text-sm text-gray-200">4.2m Follower</div>
+                                </div>
+                                <div class="item  p-3 px-4 hover:bg-gray-800 cursor-pointer">
+                                        <div class=" text-sm text-gray-200">Treanding in India </div>
+                                        <div class="font-bold"> #Pradyuman upadhyay</div>
+                                        <div class="text-sm text-gray-200">3m Follower</div>
+                                </div>
+                                <div class="item  p-3 px-4 hover:bg-gray-800 cursor-pointer">
+                                        <div class=" text-sm text-gray-200">Treanding in India </div>
+                                        <div class="font-bold"> #Ananya Tiwari</div>
+                                        <div class="text-sm text-gray-200">2.2m Follower</div>
+                                </div>
+                                <div class="item  p-3 px-4 hover:bg-gray-800 cursor-pointer">
+                                        <div class=" text-sm text-gray-200">Treanding in India </div>
+                                        <div class="font-bold"> #Aditi Jaiswal </div>
+                                        <div class="text-sm text-gray-200">2m Follower</div>
+                                </div>
+                        </div>
+
+                        <div class="who w-1/2 p-5  rounded-xl bg-slate-950 m-3 space-y-4 sticky top-[55vh]">
+                                <h1 class=" text-xl font-bold px-3"> Who To Follow </h1>
+                                <div class="item  p-3 px-4">
+                                        <div class="font-bold  hover:bg-gray-800 cursor-pointer p-3 px-4"> Mohit
+                                                sahu
+                                        </div>
+                                        <div class="font-bold  hover:bg-gray-800 cursor-pointer p-3 px-4">
+                                                Saurah Gupta
+                                        </div>
+                                        <div class="font-bold  hover:bg-gray-800 cursor-pointer p-3 px-4">
+                                                Gaurav Kumar
+                                        </div>
+                                        <div class="font-bold  hover:bg-gray-800 cursor-pointer p-3 px-4">
+                                                Geetika
+                                                Vishavkarma</div>
+                                        <div class="text-blue-600 underline my-5  hover:bg-gray-800 cursor-pointer">
+                                                Show
+                                                more</div>
+                                </div>
+
+                        </div>
+                </div>
+</body>
+
+</html>
